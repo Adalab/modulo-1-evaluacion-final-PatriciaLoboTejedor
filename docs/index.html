@@ -3,66 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Anonymous Proxy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="./assets/images/heart-solid.svg" />
   </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+  <body class="body">
+    <header class="header">
+      <nav class="header__menu">
+        <img
+          class="header__menu--icon"
+          src="assets/images/ico-menu.svg"
+          alt="menu"
+        />
+      </nav>
+      <div class="header__hero">
+        <h1 class="header__hero--title">anonymous proxy</h1>
+        <h2 class="header__hero--subtitle">In hac habitasse platea dictumst.</h2>
+        <button class="header__hero--button">
+          <img src="assets/images/ico-scroll-down.svg" alt="hero--button" />
+        </button>
+      </div>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+    <main class="main">
+      <section class="main__section-looking">
+        <p class="main__section-looking--toptext">insomnia tips</p>
+        <h3 class="main__section-looking--title">looking through a window</h3>
+        <p class="main__section-looking--text">
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <button class="main__section-looking--button">go</button>
+      </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+      <section class="main__section-3reasons">
+        <div class="section-3reasons__grid">
+          <h3 class="section-3reasons__title">3 Reasons To Purchase</h3>
+          <div class="section-3reasons__item item1">
+            <h3 class="section-3reasons__item--title">Ut sed metus</h3>
+            <p class="section-3reasons__item--text">
+              Lorem ipsum dolor sit amet, consecteur.
+            </p>
+          </div>
+          <div class="section-3reasons__item item2">
+            <h3 class="section-3reasons__item--title">Curabitur ac erat</h3>
+            <p class="section-3reasons__item--text">
+              Mauris mattis urna quis lorem molestie.
+            </p>
+          </div>
+          <div class="section-3reasons__item item3">
+            <h3 class="section-3reasons__item--title">Morbi dictum</h3>
+            <p class="section-3reasons__item--text">
+              Aliquam in dolor et dolor tincidunt.
+            </p>
+          </div>
+          <button class="section-3reasons__button">More reasons</button>
+        </div>
+      </section>
+    </main>
 
-          </li>
+    <footer class="footer">
+      <button class="footer__button">
+        <img src="assets/images/ico-arrow.svg" alt="footer--button" />
+      </button>
+      <nav class="footer__pages-menu">
+        <ul>
+          <li class="footer__pages-menu--items">articles</li>
+          <li class="footer__pages-menu--items">books</li>
+          <li class="footer__pages-menu--items">events</li>
+          <li class="footer__pages-menu--items">reasons</li>
+          <li class="footer__pages-menu--items">tips</li>
         </ul>
-      </main>
+      </nav>
+      <nav class="footer__social-menu">
+        <ul>
+          <li class="footer__social-menu--items">twitter</li>
+          <li class="footer__social-menu--items">instagram</li>
+          <li class="footer__social-menu--items">mastodon.social</li>
+        </ul>
+      </nav>
+      <small class="footer__copy">
+        <p class="footer__copy--c">&copy; 2021</p>
+        <p class="footer__copy--love">we <i class="fas fa-heart"></i> components</p>
+      </small>
+    </footer>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
