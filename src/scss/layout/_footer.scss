@@ -10,7 +10,6 @@
     border-radius: 50%;
     position: relative;
     top: -22.5px;
-
     background-color: $color-white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     img {
@@ -72,6 +71,9 @@
       .fas {
         color: $color-orange;
       }
+    }
+    a {
+      color: white;
     }
   }
 }

@@ -3,11 +3,11 @@
 @import "core/reset";
 @import "core/mixins";
 
-//COMPONENTS
-@import "components/links";
-
 //LAYOUT
 @import "layout/header";
 @import "layout/section-looking";
 @import "layout/section-3reasons";
 @import "layout/footer";
+
+//COMPONENTS
+@import "components/effects";

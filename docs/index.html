@@ -21,19 +21,25 @@
 
   <body class="body">
     <header class="header">
-      <nav class="header__menu">
+      <a class="header__menu" target="_blank" href="http://adalab.es" title="Menu">
         <img
           class="header__menu--icon"
           src="assets/images/ico-menu.svg"
           alt="menu"
+          title="menu"
         />
-      </nav>
-      <div class="header__hero">
+      </a>
+      <div id="inicio" class="header__hero">
         <h1 class="header__hero--title">anonymous proxy</h1>
         <h2 class="header__hero--subtitle">In hac habitasse platea dictumst.</h2>
-        <button class="header__hero--button">
+        <a
+          class="header__hero--button"
+          href="./index.html#3reasons"
+          alt="3 Reasons"
+          title="3 Reasons to purchase"
+        >
           <img src="assets/images/ico-scroll-down.svg" alt="hero--button" />
-        </button>
+        </a>
       </div>
     </header>
 
@@ -45,10 +51,10 @@
           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
           luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
-        <button class="main__section-looking--button">go</button>
+        <div class="main__section-looking--button">go</div>
       </section>
 
-      <section class="main__section-3reasons">
+      <section id="3reasons" class="main__section-3reasons">
         <div class="section-3reasons__grid">
           <h3 class="section-3reasons__title">3 Reasons To Purchase</h3>
           <div class="section-3reasons__item item1">
@@ -69,30 +75,99 @@
               Aliquam in dolor et dolor tincidunt.
             </p>
           </div>
-          <button class="section-3reasons__button">More reasons</button>
+          <div class="section-3reasons__button">More reasons</div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <button class="footer__button">
+      <a
+        class="footer__button"
+        href="./index.html#inicio"
+        alt="Inicio"
+        title="Inicio"
+      >
         <img src="assets/images/ico-arrow.svg" alt="footer--button" />
-      </button>
+      </a>
       <div class="footer-flex">
         <nav class="footer-flex__pages-menu">
           <ul>
-            <li class="footer-flex__pages-menu--items">articles</li>
-            <li class="footer-flex__pages-menu--items">books</li>
-            <li class="footer-flex__pages-menu--items">events</li>
-            <li class="footer-flex__pages-menu--items">reasons</li>
-            <li class="footer-flex__pages-menu--items">tips</li>
+            <li>
+              <a
+                class="footer-flex__pages-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Articles"
+                >articles</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__pages-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Books"
+                >books</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__pages-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Events"
+                >events</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__pages-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Reasons"
+                >reasons</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__pages-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Tips"
+                >tips</a
+              >
+            </li>
           </ul>
         </nav>
         <nav class="footer-flex__social-menu">
           <ul>
-            <li class="footer-flex__social-menu--items">twitter</li>
-            <li class="footer-flex__social-menu--items">instagram</li>
-            <li class="footer-flex__social-menu--items">mastodon.social</li>
+            <li>
+              <a
+                class="footer-flex__social-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Twitter"
+                >twitter</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__social-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Instagram"
+                >instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-flex__social-menu--items"
+                target="_blank"
+                href="http://adalab.es"
+                title="Mastodon.social"
+                >mastodon.social</a
+              >
+            </li>
           </ul>
         </nav>
         <small class="footer-flex__copy">

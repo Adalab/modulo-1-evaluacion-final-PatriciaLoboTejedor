@@ -6,6 +6,10 @@
   appearance: auto;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: $font-main;
