@@ -1,26 +1,57 @@
-.header__hero--button {
+/*.header__hero--button {
   transition: transform 1s;
 }
 .header__hero--button:hover {
   transform: scale(1.5);
-}
+}*/
 .main__section-looking--button {
-  transition: background-color 0.5s, border 0.5s, color 0.5s, cursor 0, 5s;
+  transition: background-color 0.5s, border 0.5s, color 0.5s, cursor 0.5s,
+    transform 1s;
 }
 .main__section-looking--button:hover {
-  background-color: $color-white;
-  border: 3px solid $color-dark-grey-blue;
-  color: $color-dark-grey-blue;
-  cursor: crosshair;
+  background-color: $color-orange;
+  border: 3px solid $color-orange;
+  color: $color-white;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .section-3reasons__button {
-  transition: transform 1s, cursor 0.5s;
+  transition: cursor 0.5s, transform 1s;
 }
 .section-3reasons__button:hover {
   transform: scale(1.2);
-  cursor: crosshair;
+  cursor: pointer;
 }
-.footer__button:hover {
+.footer__button {
+  animation-name: button-footer-move;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  @keyframes button-footer-move {
+    from {
+      transform: translate(0px, 3px) scale(1);
+    }
+    to {
+      transform: translate(0px, -3px) scale(1.1);
+    }
+  }
+}
+.header__hero--button {
+  animation-name: button-hero-scale;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  @keyframes button-hero-scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+/*.footer__button:hover {
   background-color: $color-dark-grey-blue;
   animation-name: button-footer;
   animation-duration: 2s;
@@ -35,4 +66,4 @@
       transform: scale(1);
     }
   }
-}
+}*/
