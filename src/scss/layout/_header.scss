@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    cursor: pointer;
     &--icon {
       display: block;
       margin: 50%;
@@ -63,6 +64,7 @@
       border-radius: 50%;
       background-color: $color-white;
       margin-bottom: 53px;
+      cursor: pointer;
 
       @include tablet {
         margin-bottom: 45px;
