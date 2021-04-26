@@ -28,6 +28,7 @@
         font-family: $font-titles;
         font-weight: bold;
         line-height: 1.875rem;
+        text-transform: capitalize;
         @include tablet {
           font-size: 1.625rem;
           line-height: 2.813rem;
@@ -53,9 +54,9 @@
           font-family: $font-titles;
           font-weight: bold;
           line-height: 1.875rem;
-          padding-bottom: 15px;
           @include tablet {
             font-size: 1.5rem;
+            padding-bottom: 15px;
           }
         }
         &--text {
@@ -114,6 +115,7 @@
         }
         @include desktop {
           padding: 0 62.5px;
+          text-transform: capitalize;
         }
       }
     }

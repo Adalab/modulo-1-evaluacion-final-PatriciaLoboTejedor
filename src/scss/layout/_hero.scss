@@ -1,0 +1,66 @@
+.main {
+  &__hero {
+    background: url(../images/cover.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: $color-white;
+    text-align: center;
+
+    &--title {
+      padding-bottom: 10px;
+      font-size: 2.625rem;
+      font-family: $font-titles;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 3.438rem;
+      word-spacing: 100vw;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      @include tablet {
+        font-size: 5rem;
+        line-height: 6.625rem;
+        padding-bottom: 20px;
+      }
+      @include desktop {
+        font-size: 6.25rem;
+        line-height: 8.25rem;
+        padding-bottom: 0px;
+      }
+    }
+    &--subtitle {
+      font-size: 1rem;
+      font-family: $font-main;
+      text-transform: capitalize;
+      font-weight: normal;
+      padding-bottom: 45px;
+      line-height: 1.313rem;
+      @include tablet {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 30px;
+      }
+    }
+    &--button {
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $color-white;
+      margin-bottom: 53px;
+      cursor: pointer;
+
+      @include tablet {
+        margin-bottom: 45px;
+      }
+      @include desktop {
+        margin-bottom: 13px;
+      }
+      img {
+        padding: 16.5px 12.5px;
+      }
+    }
+  }
+}

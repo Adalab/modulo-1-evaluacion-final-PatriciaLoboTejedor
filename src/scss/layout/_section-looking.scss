@@ -12,7 +12,6 @@
       font-size: 0.875rem;
       color: $color-lightblue;
       text-transform: capitalize;
-      font-weight: normal;
       line-height: 1.875rem;
       @include desktop {
         font-size: 1rem;
@@ -39,10 +38,8 @@
       font-size: 1.125rem;
       line-height: 1.875rem;
       padding-bottom: 30px;
-      font-weight: normal;
       @include tablet {
         font-size: 1.25rem;
-        line-height: 1.875rem;
       }
     }
     &--button {

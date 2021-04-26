@@ -32,44 +32,44 @@
     &__pages-menu {
       text-transform: uppercase;
       line-height: 1.875rem;
-      font-weight: normal;
       padding-bottom: 30px;
       @include tablet {
         width: 210px;
         padding-bottom: 0px;
         order: 2;
       }
-      @include tablet {
+      @include desktop {
         width: 160px;
       }
     }
     &__social-menu {
       text-transform: uppercase;
       line-height: 1.875rem;
-      font-weight: normal;
       padding-bottom: 30px;
       @include tablet {
         order: 3;
         width: 210px;
         padding-bottom: 0px;
       }
-      @include tablet {
+      @include desktop {
         width: 160px;
       }
     }
     &__copy {
-      font-size: 0.875rem;
-      line-height: 1.875rem;
-      font-weight: normal;
       @include tablet {
         order: 1;
         width: 210px;
       }
-      @include tablet {
+      @include desktop {
         width: 160px;
       }
-      .fas {
-        color: $color-orange;
+      &--c,
+      &--love {
+        font-size: 0.875rem;
+        line-height: 1.875rem;
+        .fas {
+          color: $color-orange;
+        }
       }
     }
     a {

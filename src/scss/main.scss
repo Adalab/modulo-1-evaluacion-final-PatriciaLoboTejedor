@@ -2,9 +2,11 @@
 @import "core/variables";
 @import "core/reset";
 @import "core/mixins";
+@import "core/commons";
 
 //LAYOUT
 @import "layout/header";
+@import "layout/hero";
 @import "layout/section-looking";
 @import "layout/section-3reasons";
 @import "layout/footer";
