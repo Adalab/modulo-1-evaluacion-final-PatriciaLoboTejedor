@@ -4,15 +4,17 @@
   text-align: center;
   padding-bottom: 45px;
   &__button {
+    position: relative;
+    display: block;
+    top: -22.5px;
+    margin: 0 auto;
+
     width: 45px;
     height: 45px;
     text-align: center;
     border-radius: 50%;
     background-color: $color-white;
     cursor: pointer;
-
-    position: relative;
-    top: -22.5px;
     img {
       padding: 10.5px 12px;
     }
