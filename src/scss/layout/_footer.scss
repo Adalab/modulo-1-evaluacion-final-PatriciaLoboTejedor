@@ -16,7 +16,7 @@
     }
   }
   .footer-flex {
-    margin-top: -12.5px;
+    margin-top: 15px;
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -25,7 +25,7 @@
       margin: 0 40px;
     }
     @include desktop {
-      margin: -28px 370px 0 370px;
+      margin: 0 370px 0 370px;
     }
     &__pages-menu {
       text-transform: uppercase;
